@@ -53,12 +53,11 @@
       <p class="text-black text-lg">Welcome to Spocap!</p>
       <p class="text-black text-sm">Your nostalgic Spotify Recap in a classic Windows 95 style.</p>
 
-      @auth
-        <a href="{{ url('/top-tracks') }}" class="block bg-gray-200 border border-black text-center py-1">View Recap</a>
-      @else
-        <a href="{{ route('login') }}" class="block bg-gray-200 border border-black text-center py-1">Login</a>
-        <a href="{{ route('register') }}" class="block bg-gray-200 border border-black text-center py-1">Register</a>
-      @endauth
+        <a href="{{ route('login') }}" class="block bg-gray-200 border-black text-center py-1">View Top Tracks</a>
+      @guest    
+      <a href="{{ route('login') }}" class="block bg-gray-200 border border-black text-center py-1">Login</a>
+      <a href="{{ route('register') }}" class="block bg-gray-200 border border-black text-center py-1">Register</a>
+      @endguest
     </div>
   </div>
 

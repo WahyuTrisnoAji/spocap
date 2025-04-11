@@ -69,7 +69,9 @@
         </div>
 
         <div class="flex justify-end space-x-2 pt-2">
-          <button type="submit" class="bg-gray-100 border border-black px-3 py-1 text-sm">Register</button>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white border border-black px-3 py-1 text-sm">
+            Register
+          </button>
           <a href="{{ route('login') }}" class="bg-gray-100 border border-black px-3 py-1 text-sm">Login</a>
         </div>
       </form>
